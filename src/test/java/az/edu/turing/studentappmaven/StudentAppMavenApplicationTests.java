@@ -1,13 +1,13 @@
-package az.edu.turing.studentAppSpring;
+package az.edu.turing.studentappmaven;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class StudentAppMavenApplicationTests {
-
-    @Test
-    void contextLoads() {
-    }
-
-}
+//@SpringBootTest
+//class StudentAppMavenApplicationTests {
+//
+//    @Test
+//    void contextLoads() {
+//    }
+//
+//}

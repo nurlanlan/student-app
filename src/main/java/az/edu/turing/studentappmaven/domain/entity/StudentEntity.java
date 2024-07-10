@@ -1,20 +1,26 @@
 package az.edu.turing.studentappmaven.domain.entity;
 
 
-import lombok.Data;
+import lombok.*;
+import lombok.extern.log4j.Log4j2;
+import lombok.extern.slf4j.Slf4j;
 
-import javax.annotation.PostConstruct;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Data
-@PostConstruct
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@Log4j2
 public class StudentEntity {
-    public Long id;
-    public String name;
-    public Integer age;
-    public Boolean gender;
-    public Double grade;
-    public LocalDate updateDate;
-    public LocalDate deleteDate;
+
+    private Long id;
+    private String name;
+    private Integer age;
+    private Double grade;
+    private Boolean gender;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 
 }
